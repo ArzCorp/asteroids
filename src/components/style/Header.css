@@ -1,0 +1,28 @@
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  background-color: black;
+}
+
+.header__logo{
+  padding-left: 10px;
+  width: 25%;
+}
+
+.header__ancore{
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.icon-fav{
+  width: 50%;
+}
