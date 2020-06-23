@@ -11,7 +11,7 @@ class Header extends React.Component {
         <div className="navbar">
           <a className="header__ancore" href="/">Asteroides</a>
           <a className="header__ancore" href="/">Galeria</a>
-          <a className="header__ancore" href="/"><img className="icon-fav" src={iconFav} /></a>
+          <a className="header__ancore" href="/"><img className="icon-fav" alt="icono favoritos" src={iconFav} /></a>
         </div>
       </header>
     )
