@@ -1,28 +1,24 @@
-.header__container{
+.header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px;
-  background-color: black;
+  padding: var(--spacingx2) 0px;
+  background-color: var(--colorDark);
 }
 
-.header__logo{
-  padding-left: 10px;
-  width: 25%;
-}
-
-.header__ancore{
-  margin-right: 10px;
-  text-decoration: none;
-  color: white;
+.header img{
+  width: 50%;
 }
 
 .navbar{
   display: flex;
   align-items: center;
-  height: 50px;
+  justify-content: center;
 }
 
-.icon-fav{
-  width: 50%;
+.navbar a{
+  color: var(--colorClear);
+  text-decoration: none;
+  margin-left: var(--spacing);
+  font-size: var(--sizeText);
 }

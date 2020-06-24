@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/Header.css';
+import './css/Header.css';
 import Logo from '../images/logo.svg';
 import iconFav from '../images/icon-fav.svg';
 
