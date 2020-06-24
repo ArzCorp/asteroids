@@ -1,0 +1,80 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+p{
+  font-family: var(--fontText);
+}
+
+h1{
+  font-family: var(--fontText);
+  font-weight: 600;
+  font-size: var(--sizeTitle);
+}
+
+h2{
+  font-family: var(--fontText);
+  font-size: var(--sizeSubtitle);
+}
+
+h3{
+  font-family: var(--fontText);
+  font-weight: 600;
+  font-size: var(--sizeMin);
+}
+
+h4{
+  font-family: var(--fontData);
+  font-weight: 600;
+  font-size: var(--sizeMin);
+}
+
+:root{
+  /*Fonts*/
+  --fontText: 'Rasa', serif;
+  --fontData: 'Cousine', monospace;
+
+  /*Letter size*/
+  --sizeTitle: 3.12em;
+  --sizeSubtitle: 2.5em;
+  --sizeText: 1.5em;
+  --sizeMin: .87em;
+
+  /*Spacing*/
+  --spacingMin: 5px;
+  --spacing: 10px;
+  --spacingx2: 20px;
+  --spacingx3: 30px;
+  --spacingMax: 35px;
+
+  /*Colors*/
+  --colorPrincipal: #55C8F9;
+  --colorSecundary: #394444;
+  --colorClear: #F7FBFE;
+  --colorDark: #01010F;
+  --colorError: #C30000;
+  --colorPass: #00A053;
+}
+
+.container{
+  width: 1024px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.button{
+  width: 190px;
+  height: 50px;
+  color: white;
+  background-color: transparent;
+  border: 3px solid var(--colorPrincipal)
+}
+
+.button:hover{
+  color: var(--colorDark);
+  background-color: var(--colorPrincipal);
+}
