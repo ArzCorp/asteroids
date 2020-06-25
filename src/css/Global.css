@@ -6,26 +6,31 @@
 
 p{
   font-family: var(--fontText);
+  color: var(--colorClear);
 }
 
 h1{
+  color: var(--colorClear);
   font-family: var(--fontText);
   font-weight: 600;
   font-size: var(--sizeTitle);
 }
 
 h2{
+  color: var(--colorClear);
   font-family: var(--fontText);
   font-size: var(--sizeSubtitle);
 }
 
 h3{
+  color: var(--colorClear);
   font-family: var(--fontText);
   font-weight: 600;
   font-size: var(--sizeMin);
 }
 
 h4{
+  color: var(--colorClear);
   font-family: var(--fontData);
   font-weight: 600;
   font-size: var(--sizeMin);
@@ -87,4 +92,8 @@ a{
 .icon{
   width: 50px;
   height: 50px;
+}
+
+.bold{
+  font-weight: 600;
 }

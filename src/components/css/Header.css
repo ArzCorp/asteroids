@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--spacingx2) 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: var(--colorDark);
 }
 
