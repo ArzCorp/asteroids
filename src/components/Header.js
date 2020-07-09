@@ -1,18 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './css/Header.css';
 import Logo from '../images/logo.svg';
-import iconFav from '../images/icon-fav.svg';
 
 class Header extends React.Component {
   render() {
     return (
       <header className="header">
         <div className="container">
-          <img src={Logo} className="header__logo" alt="Logo" />
+          <Link to="/home" className="header__logo ancore"><img src={Logo} alt="Logo" /></Link>
           <div className="navbar">
-            <a className="header__ancore" href="/">Asteroides</a>
-            <a className="header__ancore" href="/">Galeria</a>
-            <a className="header__ancore" href="/"><img className="icon-fav" alt="icono favoritos" src={iconFav} /></a>
+            <Link className="ancore" to="/asteroides">Asteroides</Link>
+            <Link to="/galeria">Galeria</Link>
+            <Link to="/favoritos"><i class="icon fas fa-star"></i></Link>
           </div>
         </div>
       </header>

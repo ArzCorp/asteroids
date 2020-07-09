@@ -2,27 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacingx2) 0px;
+  padding: var(--spacing) 0px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: var(--colorDark);
-}
-
-.header img{
-  width: 50%;
+  z-index: 5;
 }
 
 .navbar{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.navbar a{
-  color: var(--colorClear);
-  text-decoration: none;
-  margin-left: var(--spacing);
-  font-size: var(--sizeText);
 }

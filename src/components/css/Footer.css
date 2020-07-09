@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacingx2) 0px;
+  padding: var(--spacingx3) 0px;
   background-color: var(--colorDark);
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2;
 }
 
 .footer__api{
@@ -18,7 +19,11 @@
 }
 
 .api__logo{
-  margin-right: var(--spacing);
+  margin-right: var(--spacingx2);
+}
+
+.icon-brand {
+  margin-right: var(--spacingx2);
 }
 
 .api__description p{

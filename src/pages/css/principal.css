@@ -1,0 +1,27 @@
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--colorDark);
+}
+
+.hero__content {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin: 0px auto;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__description {
+  width: 80%;
+}
+
+.hero__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
