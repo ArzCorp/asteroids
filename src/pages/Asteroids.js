@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Planet from '../components/Planet';
 
 const Asteroids = () => {
   return (
-    <div>Hola mundo</div>
+    <Fragment>
+      <Planet />
+    </Fragment>
   )
 }
 
