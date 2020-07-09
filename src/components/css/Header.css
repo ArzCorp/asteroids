@@ -4,10 +4,10 @@
   align-items: center;
   padding: var(--spacing) 0px;
   position: fixed;
+  background-color: var(--colorDark);
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--colorDark);
   z-index: 5;
 }
 
