@@ -6,10 +6,10 @@ import './css/Planet.css';
 const Planet = () => {
   return (
     <div className="planet">
+      <video id="video" className="video-asteroids" poster="" autoPlay={true} loop preload="true" >
+        <source src={video} type="video/mp4" />
+      </video>
       <div>
-        <video id="video" poster="" autoPlay={true} loop preload="true" >
-          <source src={video} type="video/mp4" />
-        </video>
         <div className="asteroids">
           <img src={asteroid} alt="asteroide" />
         </div>

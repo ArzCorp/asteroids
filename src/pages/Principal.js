@@ -7,7 +7,7 @@ const Principal = () => {
   return (
     <main className="hero">
       <div className="container">
-        <video id="video" poster="" autoPlay={true} loop preload="true" >
+        <video className="video" poster="" autoPlay={true} loop preload="true" >
           <source src={video} type="video/mp4" />
         </video>
         <div className="hero__content">
