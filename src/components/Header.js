@@ -12,7 +12,7 @@ class Header extends React.Component {
           <div className="navbar">
             <Link className="ancore" to="/asteroides">Asteroides</Link>
             <Link to="/galeria">Galeria</Link>
-            <Link to="/favoritos"><i class="icon fas fa-star"></i></Link>
+            <Link to="/favoritos"><i className="icon fas fa-star"></i></Link>
           </div>
         </div>
       </header>
