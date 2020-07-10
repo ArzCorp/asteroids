@@ -1,0 +1,18 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing) 0px;
+  position: fixed;
+  background-color: var(--colorDark);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

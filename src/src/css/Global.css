@@ -1,0 +1,128 @@
+:root{
+  /*Fonts*/
+  --fontText: 'Orbitron', sans-serif;
+  --fontData: 'Cousine', monospace;
+
+  /*Letter size*/
+  --sizeTitle: 3.12em;
+  --sizeSubtitle: 2em;
+  --sizeText: 1.3em;
+  --sizeMin: .87em;
+
+  /*Spacing*/
+  --spacingMin: 5px;
+  --spacing: 10px;
+  --spacingx2: 20px;
+  --spacingx3: 30px;
+  --spacingMax: 35px;
+
+  /*Colors*/
+  --colorPrincipal: #55C8F9;
+  --colorSecundary: #394444;
+  --colorClear: #F7FBFE;
+  --colorDark: #000000;
+  --colorError: #C30000;
+  --colorPass: #00A053;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+p{
+  font-family: var(--fontText);
+  color: var(--colorClear);
+}
+
+h1{
+  color: var(--colorClear);
+  font-family: var(--fontText);
+  font-size: var(--sizeTitle);
+  font-weight: normal;
+}
+
+h2{
+  color: var(--colorClear);
+  font-family: var(--fontText);
+  font-size: var(--sizeSubtitle);
+  font-weight: lighter;
+}
+
+h3{
+  color: var(--colorClear);
+  font-family: var(--fontText);
+  font-weight: 600;
+  font-size: var(--sizeMin);
+  padding: var(--spacingMin) 0px;
+}
+
+h4{
+  color: var(--colorClear);
+  font-family: var(--fontData);
+  font-weight: 600;
+  font-size: var(--sizeMin);
+}
+
+a{
+  text-decoration: none;
+  color: var(--colorClear);
+  font-size: var(--sizeSubtitle);
+  display: block;
+  padding: var(--spacing);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container{
+  width: 1024px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 40px;
+  margin: var(--spacingx2) 0px;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid var(--colorPrincipal);
+  font-size: var(--sizeText);
+  font-weight: bold;
+}
+
+.button:hover{
+  color: var(--colorDark);
+  background-color: var(--colorPrincipal);
+}
+
+.icon{
+  font-size: 40px;
+  padding: var(--spacing);
+  color: var(--colorPrincipal);
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.bold{
+  font-weight: 600;
+}
+
+#video{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+}
