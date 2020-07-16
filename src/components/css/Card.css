@@ -7,27 +7,27 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  background-color: gray;
+  background-color: var(--colorSecundary);
   width: 310px;
   height: 630px;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: var(--spacing);
+  padding: var(--spacingx2);
 }
 
 .card__content {
   margin: auto;
-  background-color: white;
+  background-color: var(--colorClear);
   width: 270px;
   height: 470px;
-  border-radius: 100px 15px 15px 15px;
-  padding: 20px;
+  border-radius: 100px var(--spacing) var(--spacing) var(--spacing);
+  padding: var(--spacingx2);
 }
 
 .asteroid {
   width: 290px;
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding-bottom: var(--spacing);
 }
 
 .card__name, .title__api {
@@ -43,7 +43,7 @@
 .card__title {
   display: flex;
   justify-content: center;
-  font-size: black;
+  font-size: var(--colorDark);
 }
 
 
@@ -57,8 +57,8 @@
   display: grid;
   grid-template-columns: 70px 1fr;
   grid-template-rows: repeat(4, 80px);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: var(--spacingx2);
+  padding-bottom: var(--spacingx2);
 }
 
 .card__item {
@@ -74,11 +74,11 @@
   width: 190px;
   height: 40px;
   margin: auto;
-  color: black;
+  color: var(--colorDark);
   text-align: center;
   background-color: transparent;
-  border: 3px solid #55C8F9;
-  font-size: 14px;
+  border: 3px solid var(--colorPrincipal);
+  font-size: var(--sizeText);
   font-weight: bold;
   padding-bottom: var(--spacing);
   margin-bottom: var(--spacing);
