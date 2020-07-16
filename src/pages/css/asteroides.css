@@ -2,11 +2,74 @@
   margin: 0 auto;
   position: relative;
   z-index: 0;
-  top: 550px;
-  /* margin-top: -150px; */
+  top: -200px;
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 800px;
+  height: 600px;
   background-color: var(--colorDark);
+}
+
+.asteroids__float {
+  position: relative;
+  top: -100px;
+  left: 50px;
+}
+
+.asteroids__scroll {
+  position: relative;
+  right: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  top: -250px;
+}
+
+.orbit__asteroids {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(3, 170px);
+  width: 900px;
+  animation: asteroide 1000ms infinite;
+}
+
+.asteroide1 {
+  position: relative;
+  top: 50px;
+  left: 80px;
+}
+
+.asteroide2 {
+  position: relative;
+  top: -150;
+  left: 70px;
+}
+
+.asteroide3 {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+.asteroide5 {
+  position: relative;
+  bottom: -30px;
+  left: 70px;
+}
+
+.asteroide7 {
+  position: relative;
+  left: 70px;
+}
+
+.asteroide8 {
+  position: relative;
+  bottom: -60px;
+  left: 70px;
+}
+
+@keyframes asteroide {
+  from {transform: rotate(-1deg); left: -20px; top: -2px; right: -2px; bottom: -2px;}
+  to {transform: rotate(1deg); left: 20px; top: 2px; right: 2px; bottom: 2px; }
 }
