@@ -1,0 +1,12 @@
+.content__asteroids {
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+  top: 550px;
+  /* margin-top: -150px; */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 800px;
+  background-color: var(--colorDark);
+}

@@ -1,0 +1,4 @@
+.hero__description {
+  position: relative;
+  padding-top: var(--spacingMax);
+}
