@@ -26,7 +26,7 @@
 }
 
 *{
-  margin: 0px;
+  margin: 0;
   padding: 0px;
   box-sizing: border-box;
 }
@@ -34,6 +34,10 @@
 p{
   font-family: var(--fontText);
   color: var(--colorClear);
+}
+
+body {
+  background-color: var(--colorDark);
 }
 
 h1{

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   box-sizing: border-box;
@@ -87,4 +88,95 @@
 .card__button:hover{
   color: var(--colorDark);
   background-color: var(--colorPrincipal);
+=======
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: var(--colorSecundary);
+  width: 310px;
+  height: 630px;
+  border-radius: var(--spacing);
+  padding: var(--spacingx2);
+}
+
+.card__content {
+  margin: auto;
+  background-color: var(--colorClear);
+  width: 270px;
+  height: 470px;
+  border-radius: 100px var(--spacing) var(--spacing) var(--spacing);
+  padding: var(--spacingx2);
+}
+
+.asteroid {
+  width: 290px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: var(--spacing);
+}
+
+.card__name, .title__api {
+  font-weight: bold;
+  color: var(--colorSecundary);
+}
+
+.title__data {
+  font-family: var(--fontData);
+  color: var(--colorPass);
+}
+
+.card__title {
+  display: flex;
+  justify-content: center;
+  font-size: var(--colorDark);
+}
+
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.card__container {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: repeat(4, 80px);
+  padding-top: var(--spacingx2);
+  padding-bottom: var(--spacingx2);
+}
+
+.card__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 40px;
+  margin: auto;
+  color: var(--colorDark);
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid var(--colorPrincipal);
+  font-size: var(--sizeText);
+  font-weight: bold;
+  padding-bottom: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+.card__button:hover{
+  color: var(--colorDark);
+  background-color: var(--colorPrincipal);
+>>>>>>> d14c1c46a6425a2cebc62e0d50131825548dadc8
 }

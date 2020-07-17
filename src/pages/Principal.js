@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import video from '../video/y2mate.com - Planeta Tierra 3D Girando HD_VJIxbhO8WdM_1080p.mp4';
-import './css/principal.css';
+import Descripcion from '../components/Descripcion'
+import './css/principal.css'
 
 const Principal = () => {
   return (
+<<<<<<< HEAD
     <main className="hero">
       <div className="container">
         <video className="video" poster="" autoPlay={true} loop preload="true" >
@@ -25,6 +25,11 @@ const Principal = () => {
         </div>
       </div>
     </main>
+=======
+    <div className="container">
+      <Descripcion />
+    </div>
+>>>>>>> d14c1c46a6425a2cebc62e0d50131825548dadc8
   )
 }
 
