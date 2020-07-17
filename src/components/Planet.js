@@ -6,23 +6,23 @@ import './css/Planet.css';
 const Planet = () => {
   return (
     <div className="planet">
-      <video id="video" className="video-asteroids" poster="" autoPlay={true} loop preload="true" >
+      <video id="video" className="video-planet" poster="" autoPlay={true} loop preload="true" >
         <source src={video} type="video/mp4" />
       </video>
-      <div>
-        <div className="asteroids">
+      <div className="asteroids">
+        <div className="asteroid">
           <img src={asteroid} alt="asteroide" />
         </div>
-        <div className="asteroids">
+        <div className="asteroid">
           <img src={asteroid} alt="asteroide" />
         </div>
-        <div className="asteroids">
+        <div className="asteroid">
           <img src={asteroid} alt="asteroide" />
         </div>
-        <div className="asteroids">
+        <div className="asteroid">
           <img src={asteroid} alt="asteroide" />
         </div>
-        <div className="asteroids">
+        <div className="asteroid">
           <img src={asteroid} alt="asteroide" />
         </div>
       </div>

@@ -1,7 +1,40 @@
 .planet {
-
+  position: relative;
+  background-color: var(--colorDark);
 }
 
-.video{
+.video-planet{
   width: 100%;
+}
+
+.asteroids {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.asteroid {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+@keyframes movements {
+		from {
+		transform: rotate(0deg);
+		}
+		to {
+    transform: rotate(359deg);
+    }
+}
+
+.asteroids img {
+  width: 7%;
+  animation: movements 7s infinite linear;
+}
+
+.asteroids img:hover {
+  transform: scale(0.1);
 }

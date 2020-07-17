@@ -8,7 +8,7 @@ class Header extends React.Component {
     return (
       <header className="header">
         <div className="container">
-          <Link to="/" className="header__logo ancore"><img src={Logo} alt="Logo" /></Link>
+          <Link to="/home" className="header__logo ancore"><img src={Logo} alt="Logo" /></Link>
           <div className="navbar">
             <Link className="ancore" to="/asteroides">Asteroides</Link>
             <Link to="/galeria">Galeria</Link>

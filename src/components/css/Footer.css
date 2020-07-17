@@ -4,6 +4,11 @@
   align-items: center;
   padding: var(--spacingx3) 0px;
   background-color: var(--colorDark);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .footer__api{
