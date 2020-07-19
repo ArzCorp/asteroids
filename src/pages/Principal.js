@@ -1,12 +1,13 @@
-import React from 'react';
-import Descripcion from '../components/Descripcion'
-import './css/principal.css'
+import React, { Fragment } from 'react';
+import Video from '../components/Video';
+import Hero from '../components/Hero';
 
 const Principal = () => {
   return (
-    <div className="container">
-      <Descripcion />
-    </div>
+    <Fragment>
+      <Video />
+      <Hero />
+    </Fragment>
   )
 }
 

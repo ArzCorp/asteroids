@@ -1,75 +1,106 @@
 .content__asteroids {
-  margin: 0 auto;
-  position: relative;
-  z-index: 0;
-  top: -200px;
-  display: flex;
+  display: none;
   justify-content: space-around;
   width: 100%;
-  height: 600px;
   background-color: var(--colorDark);
-}
-
-.asteroids__float {
-  position: relative;
-  top: -100px;
-  left: 50px;
-}
-
-.asteroids__scroll {
-  position: relative;
-  right: 20px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  top: -250px;
 }
 
 .orbit__asteroids {
   display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.asteroid1 {
+  width: 7%;
+  align-self: center;
+  animation: animationFrames1 linear 25s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+.asteroid2 {
+  width: 7%;
+  align-self: center;
+  justify-self: flex-start;
+  animation: animationFrames2 linear 15s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+.asteroid3 {
+  width: 7%;
+  align-self: center;
+  justify-self: flex-end;
+  animation: animationFramesNegative linear 10s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+.asteroid4 {
+  width: 7%;
+  align-self: center;
+  animation: animationFrames3 linear 12s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames1{
+  0% {
+    transform:  translate(-150px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(1700px,0px)  rotate(180deg) ;
+  }
+}
+
+@keyframes animationFrames2{
+  0% {
+    transform:  translate(-150px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(1700px,0px)  rotate(180deg) ;
+  }
+}
+
+@keyframes animationFrames3{
+  0% {
+    transform:  translate(-150px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(1700px,0px)  rotate(180deg) ;
+  }
+}
+
+@keyframes animationFramesNegative{
+  0% {
+    transform:  translate(150px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(-1700px,0px)  rotate(180deg) ;
+  }
+}
+
+.button-asteroids {
+  display: flex;
   justify-content: center;
-  grid-template-columns: repeat(3, 350px);
-  grid-template-rows: repeat(3, 170px);
-  width: 900px;
-  animation: asteroide 1000ms infinite;
+  align-items: center;
+  justify-self: center;
+  width: 190px;
+  height: 40px;
+  margin: var(--spacingx2) 0px;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid var(--colorPrincipal);
+  font-size: var(--sizeText);
+  font-weight: bold;
 }
 
-.asteroide1 {
-  position: relative;
-  top: 50px;
-  left: 80px;
-}
-
-.asteroide2 {
-  position: relative;
-  top: -150;
-  left: 70px;
-}
-
-.asteroide3 {
-  position: relative;
-  top: 50px;
-  left: 50px;
-}
-
-.asteroide5 {
-  position: relative;
-  bottom: -30px;
-  left: 70px;
-}
-
-.asteroide7 {
-  position: relative;
-  left: 70px;
-}
-
-.asteroide8 {
-  position: relative;
-  bottom: -60px;
-  left: 70px;
-}
-
-@keyframes asteroide {
-  from {transform: rotate(-1deg); left: -20px; top: -2px; right: -2px; bottom: -2px;}
-  to {transform: rotate(1deg); left: 20px; top: 2px; right: 2px; bottom: 2px; }
+.button-asteroids:hover {
+  color: var(--colorDark);
+  background-color: var(--colorPrincipal);
 }

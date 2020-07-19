@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 180px;
+  height: 100vh;
+}
+
+.hero__left {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
