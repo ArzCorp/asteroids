@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   position: absolute;
-  top: 180px;
-  height: 100vh;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .hero__left {
@@ -13,3 +13,4 @@
   display: flex;
   justify-content: flex-end;
 }
+
