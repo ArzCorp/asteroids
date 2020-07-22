@@ -4,8 +4,7 @@ import { Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Principal from './pages/Principal';
 import Asteroids from './pages/Asteroids';
-import Cargando from './pages/Cargando';
-import Galeria from './pages/Galeria';
+import Galeria from './pages/Galery';
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <div className="prueba">
           <Route exact path="/" component={Principal} />
           <Route exact path="/asteroides" component={Asteroids} />
-          <Route exact path="/favoritos" component={Cargando} />
           <Route exact path="/galeria" component={Galeria} />
         </div>
       </Layout>
