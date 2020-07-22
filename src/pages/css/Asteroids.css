@@ -1,0 +1,159 @@
+.orbit__asteroids {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.asteroid1 {
+  width: 7%;
+  position: relative;
+  top: -10px;
+  align-self: center;
+  animation: animationFrames1 linear 25s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+.info {
+  align-self: center;
+  animation: text1 linear 25s;
+  animation-iteration-count: infinite;
+}
+
+.info1 {
+  align-self: center;
+  animation: text1 linear 15s;
+  animation-iteration-count: infinite;
+}
+
+.info2 {
+  align-self: center;
+  justify-self: flex-end;
+  animation: textNegative linear 12s;
+  animation-iteration-count: infinite;
+}
+
+.info3 {
+  align-self: center;
+  animation: text1 linear 12s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text1{
+  0% {
+    transform:  translate(-150px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(1300px,0px)  rotate(0deg) ;
+  }
+}
+
+@keyframes textNegative{
+  0% {
+    transform:  translate(150px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(-1200px,0px)  rotate(0deg) ;
+  }
+}
+
+.ol {
+  width: 100px;
+}
+
+.text--two {
+  position: relative;
+  left: -16px;
+  font-size: 10px;
+  color: white;
+}
+
+.text--two:hover {
+  max-width: 100%;
+  background-color: var(--colorPrincipal);
+}
+
+.asteroid2 {
+  width: 7%;
+  align-self: center;
+  justify-self: flex-start;
+  animation: animationFrames2 linear 15s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+.asteroid3 {
+  width: 50%;
+  align-self: center;
+  justify-self: flex-end;
+  animation: animationFrames2 linear 10s;
+  animation-iteration-count: infinite;
+}
+
+.asteroid4 {
+  width: 7%;
+  align-self: center;
+  animation: animationFrames3 linear 12s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames1{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  100% {
+    transform:  rotate(180deg) ;
+  }
+}
+
+@keyframes animationFrames2{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  100% {
+    transform:  rotate(180deg) ;
+  }
+}
+
+@keyframes animationFrames3{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  100% {
+    transform:  rotate(180deg) ;
+  }
+}
+
+@keyframes animationFramesNegative{
+  0% {
+    transform:  translate(150px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(-1700px,0px)  rotate(180deg) ;
+  }
+}
+
+.button-asteroids {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  width: 190px;
+  height: 40px;
+  margin: var(--spacingx2) 0px;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid var(--colorPrincipal);
+  font-size: var(--sizeText);
+  font-weight: bold;
+}
+
+.button-asteroids:hover {
+  color: var(--colorDark);
+  background-color: var(--colorPrincipal);
+}
