@@ -1,7 +1,7 @@
 /* import axios from "axios"; */
 import { TRAER_ASTEROIDES, CARGANDO, ERROR } from '../types/asteroidesTypes'
 
-let URL = 'http://ec2-54-234-2-6.compute-1.amazonaws.com:8080/api/graphql';
+let URL = 'http://ec2-54-234-62-6.compute-1.amazonaws.com:8080/api/graphql';
 
 
 export const traerTodos = () => async (dispatch) => {
@@ -33,6 +33,7 @@ export const traerTodos = () => async (dispatch) => {
             })
     })
       .then(response => response.json())
+      console.log(respuesta.data.getNeos)
     dispatch({
       type: TRAER_ASTEROIDES,
       payload: respuesta.data.getNeos
@@ -47,3 +48,5 @@ export const traerTodos = () => async (dispatch) => {
   }
 
 }
+
+
