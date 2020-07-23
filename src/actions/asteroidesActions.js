@@ -28,12 +28,15 @@ export const traerTodos = () => async (dispatch) => {
                     estimated_diameter_max
                   }
                 }
+                orbital_data {
+                  orbit_determination_date
+                  orbital_period
+                }
               }
             }`
             })
     })
       .then(response => response.json())
-      console.log(respuesta.data.getNeos)
     dispatch({
       type: TRAER_ASTEROIDES,
       payload: respuesta.data.getNeos

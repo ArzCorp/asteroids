@@ -6,6 +6,7 @@ import asteroids from '../images/icon-asteroids.svg';
 import orbit from '../images/icon-orbit.svg';
 import telescope from '../images/icon-telescope.svg';
 import alert from '../images/icon-alert.svg';
+import '../css/Global.css'
 import './css/Card.css';
 import Cargando from './General/Cargando';
 import Error from './General/Error'
@@ -56,9 +57,8 @@ class Card extends Component {
                   </div>
                   <div className="card__item">
                     <div className="data">
-                      <h3 className="title__api">Orbita</h3>
-                      <p className="title__data">dsfsdf</p>
-                      <p className="title__data">sdfd</p>
+                      <h3 className="title__api">Referencia Neo</h3>
+                      <p className="title__data">{ nombre.neo_reference_id }</p>
                     </div>
                   </div>
                   <div className="card__item">
@@ -67,7 +67,7 @@ class Card extends Component {
                   <div className="card__item">
                     <div className="data">
                       <h3 className="title__api">Magnitud Adsoluta</h3>
-                      <p className="title__data">{ nombre.absolute_magnitude_h }</p>
+                      <p className="title__data">{ nombre.absolute_magnitude_h }Km</p>
                   </div>
                           </div>
                           <div className="card__item">
@@ -76,7 +76,7 @@ class Card extends Component {
                           <div className="card__item">
                             <div className="data">
                               <h3  className="title__api">Potencialmente Peligroso</h3>
-                              <p className="title__data">{ nombre.is_potentially_hazardous_asteroid }</p>
+                              <p className="title__data">{ nombre.is_potentially_hazardous_asteroid } No</p>
                                                                                 </div>
                           </div>
                         </div>

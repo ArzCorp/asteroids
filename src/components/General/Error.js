@@ -3,12 +3,10 @@ import colision from '../../images/colision.svg'
 
 const Error = (props) => (
   <div className="center">
-    <div className="">
+    <div>
       <img className="colision" src={colision} alt="Error" />
     </div>
-    <div >
       <h1 className="error--text">{ props.mensaje }</h1>
-    </div>
   </div>
 );
 

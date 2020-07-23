@@ -1,15 +1,12 @@
 import React, { Fragment } from 'react';
 import Video from '../components/Video';
 import Card from '../components/Card';
-import './css/Galery.css'
 
-const Galeria = () => (
+const Galery = () => (
   <Fragment>
     <Video />
-      <div className="content__asteroids">
-        <Card/>
-      </div>
+    <Card/>
   </Fragment>
 );
 
-export default Galeria;
+export default Galery;
