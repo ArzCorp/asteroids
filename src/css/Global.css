@@ -132,7 +132,7 @@ a:hover {
   position: absolute;
   display: flex;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .center {
@@ -158,6 +158,23 @@ a:hover {
   height: 600px;
 
 }
+
+ul {
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 1rem 2rem;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.has-focus {
+  color: red;
+}
+
 
 @keyframes colision1 {
   0% {

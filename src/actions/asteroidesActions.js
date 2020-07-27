@@ -17,7 +17,7 @@ export const traerTodos = () => async (dispatch) => {
       },
       body: JSON.stringify({
         query:
-            `{ getNeos {
+            `{ getNeos(skip: 3) {
                 _id
                 neo_reference_id
                 name

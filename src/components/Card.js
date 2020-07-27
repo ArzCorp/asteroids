@@ -10,16 +10,33 @@ import '../css/Global.css'
 import './css/Card.css';
 import Cargando from './General/Cargando';
 import Error from './General/Error'
+import Carousel from './carousel'
 
 
 import * as asteroidesActions from '../actions/asteroidesActions';
 
 
 class Card extends Component {
+// Código para el manejo de los botones
+  state = {
+    focus: 0
+  };
+
+  onClickPrev = () =>
+    this.setState(state => ({
+      focus: state.focus - 1 < 0 ? 0 : state.focus - 1
+    }));
+
+  onClickNext = () =>
+    this.setState(state => ({
+      focus: state.focus + 1 >= 6 ? 5 : state.focus + 1
+    }));
 
   componentDidMount() {
       this.props.traerTodos();
   }
+
+  // Manejo de botones
 
   ponerDatos = () => {
     if (this.props.cargando) {
@@ -32,8 +49,8 @@ class Card extends Component {
 
     return (
       this.props.getNeos.map((nombre) => (
-        <div key={ nombre._id }>
-              <div className="card">
+              <li key={ nombre._id } className={this.state.focus === 0 && "has-focus"}>
+               <div className="card">
                 <div className="asteroid">
                   <img src={asteroid} alt="asteroide card" />
                 </div>
@@ -82,8 +99,8 @@ class Card extends Component {
                         </div>
                         {/* <Link to="/" className="card__button" alt="">Explora</Link> */}
                         </div>
-                </div>
-            </div>
+                        </div>
+            </li>
           ))
     )
 
@@ -93,9 +110,15 @@ class Card extends Component {
   render() {
       console.log(this.props.getNeos)
       return (
+        <>
         <div className="father">
+        <Carousel component="ul" leftPadding={8} focus={this.state.focus} >
           { this.ponerDatos() }
+        </Carousel>
         </div>
+        <button onClick={this.onClickPrev}>Prev</button>
+        <button onClick={this.onClickNext}>Next</button>
+        </>
     )}
   }
 
