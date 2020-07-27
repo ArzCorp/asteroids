@@ -13,30 +13,33 @@ import Error from './General/Error'
 import Carousel from './carousel'
 
 
+
 import * as asteroidesActions from '../actions/asteroidesActions';
 
 
 class Card extends Component {
 // Código para el manejo de los botones
   state = {
-    focus: 0
+    focus: 0,
+    meteorito: 0
   };
 
   onClickPrev = () =>
     this.setState(state => ({
-      focus: state.focus - 1 < 0 ? 0 : state.focus - 1
+      focus: state.focus - (this.props.getNeos.length - this.props.getNeos.length) + 1 < (this.props.getNeos.length - this.props.getNeos.length) ? (this.props.getNeos.length - this.props.getNeos.length) : state.focus - 1
     }));
 
   onClickNext = () =>
     this.setState(state => ({
-      focus: state.focus + 1 >= 6 ? 5 : state.focus + 1
+      focus: state.focus + (this.props.getNeos.length - this.props.getNeos.length) - 1 >= this.props.getNeos.length ? (this.props.getNeos.length - 1) : state.focus + 1
     }));
 
+     // Manejo de botones
   componentDidMount() {
       this.props.traerTodos();
   }
 
-  // Manejo de botones
+
 
   ponerDatos = () => {
     if (this.props.cargando) {
@@ -46,11 +49,12 @@ class Card extends Component {
     if (this.props.error) {
       return <Error mensaje={ this.props.error }  />
     }
-
+ /* Uso el llamado de del array utilizando length para identificar cuantos elementos de array traigo y poder movernos uno a uno */
     return (
-      this.props.getNeos.map((nombre) => (
-              <li key={ nombre._id } className={this.state.focus === 0 && "has-focus"}>
-               <div className="card">
+      <Carousel component="ul" leftPadding={this.props.getNeos.length - this.props.getNeos.length + this.state.focus} focus={this.state.focus} >
+      {this.props.getNeos.map((nombre) => (
+            <li key={ nombre._id } className={this.state.focus === this.props.getNeos.length - this.props.getNeos.length + this.state.focus && "has-focus"}>
+              <div className="card">
                 <div className="asteroid">
                   <img src={asteroid} alt="asteroide card" />
                 </div>
@@ -101,26 +105,27 @@ class Card extends Component {
                         </div>
                         </div>
             </li>
-          ))
+          ))}
+          </Carousel>
     )
 
     }
 
 
   render() {
-      console.log(this.props.getNeos)
+      console.log('valor', this.props.getNeos.length - 1)
+      console.log('Aumento ', this.props.getNeos.length - this.props.getNeos.length + this.state.focus)
+      console.log('click ', this.state.focus)
+      console.log('meteorito ', this.props.getNeos.slice[this.state.focus])
       return (
-        <>
         <div className="father">
-        <Carousel component="ul" leftPadding={8} focus={this.state.focus} >
-          { this.ponerDatos() }
-        </Carousel>
+            { this.ponerDatos() } {/* Se realiza el llamado de la funcion para ver las cards en pantalla */}
+          <button className="slick-arrow slick-prev" onClick={this.onClickPrev}>Prev</button>
+          <button className="slick-arrow slick-next" onClick={this.onClickNext}>Next</button>
         </div>
-        <button onClick={this.onClickPrev}>Prev</button>
-        <button onClick={this.onClickNext}>Next</button>
-        </>
     )}
   }
+
 
   const mapStateToProps = (reducers) => {
     return reducers.asteroidesReducer;

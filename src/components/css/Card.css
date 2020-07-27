@@ -21,7 +21,6 @@
   height: 560px;
   border-radius: var(--spacing);
   padding: var(--spacingx2);
-  margin-left: 70px;
 }
 
 .card__content {
