@@ -9,10 +9,71 @@
 
 .asteroid1 {
   width: 7%;
+  position: relative;
+  top: -10px;
   align-self: center;
   animation: animationFrames1 linear 25s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
+}
+
+.info {
+  align-self: center;
+  animation: text1 linear 25s;
+  animation-iteration-count: infinite;
+}
+
+.info1 {
+  align-self: center;
+  animation: text1 linear 15s;
+  animation-iteration-count: infinite;
+}
+
+.info2 {
+  align-self: center;
+  justify-self: flex-end;
+  animation: textNegative linear 12s;
+  animation-iteration-count: infinite;
+}
+
+.info3 {
+  align-self: center;
+  animation: text1 linear 12s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text1{
+  0% {
+    transform:  translate(-150px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(1300px,0px)  rotate(0deg) ;
+  }
+}
+
+@keyframes textNegative{
+  0% {
+    transform:  translate(150px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(-1200px,0px)  rotate(0deg) ;
+  }
+}
+
+.ol {
+  width: 100px;
+}
+
+.text--two {
+  position: relative;
+  left: -16px;
+  font-size: 10px;
+  color: white;
+}
+
+.text--two:hover {
+  max-width: 100%;
+  background-color: var(--colorPrincipal);
 }
 
 .asteroid2 {
@@ -25,12 +86,11 @@
 }
 
 .asteroid3 {
-  width: 7%;
+  width: 50%;
   align-self: center;
   justify-self: flex-end;
-  animation: animationFramesNegative linear 10s;
+  animation: animationFrames2 linear 10s;
   animation-iteration-count: infinite;
-  transform-origin: 50% 50%;
 }
 
 .asteroid4 {
@@ -43,28 +103,28 @@
 
 @keyframes animationFrames1{
   0% {
-    transform:  translate(-150px,0px)  rotate(0deg) ;
+    transform:  rotate(0deg) ;
   }
   100% {
-    transform:  translate(1700px,0px)  rotate(180deg) ;
+    transform:  rotate(180deg) ;
   }
 }
 
 @keyframes animationFrames2{
   0% {
-    transform:  translate(-150px,0px)  rotate(0deg) ;
+    transform:  rotate(0deg) ;
   }
   100% {
-    transform:  translate(1700px,0px)  rotate(180deg) ;
+    transform:  rotate(180deg) ;
   }
 }
 
 @keyframes animationFrames3{
   0% {
-    transform:  translate(-150px,0px)  rotate(0deg) ;
+    transform:  rotate(0deg) ;
   }
   100% {
-    transform:  translate(1700px,0px)  rotate(180deg) ;
+    transform:  rotate(180deg) ;
   }
 }
 
@@ -96,8 +156,4 @@
 .button-asteroids:hover {
   color: var(--colorDark);
   background-color: var(--colorPrincipal);
-}
-
-.info:hover {
-  background: red;
 }

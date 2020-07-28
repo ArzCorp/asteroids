@@ -128,9 +128,109 @@ a:hover {
   height: 100%;
 }
 
-@media screen and (min-width: 500px) and (max-width: 900px) {
+.father {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  }
+
+.colision {
+  position: relative;
+  top: -100px;
+  left: 200px;
+  width: 300px;
+  height: 140px;
+  animation: colision1 linear 15s;
+  animation-iteration-count: infinite;
+}
+
+.Wrraper {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 600px;
+
+}
+
+ul {
+  display: flex;
+  padding-left: 2%;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  padding-left: 1rem 2rem;
+  flex: 1;
+  box-sizing: border-box;
+  border: 2px solid yellow;
+}
+
+.has-focus {
+  border: 5px solid red;
+}
+
+.slick-arrow{
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  border: 0;
+  cursor: pointer;
+  align-items: center;
+}
+
+.slick-arrow img {
+  width: 12px;
+  height: 100%;
+  color: rgba(0,0,0,.7);
+}
+
+.slick-prev{
+  left: 0px;
+  top: 50%;
+}
+
+.slick-next{
+  right: 0px;
+  top: 50%;
+}
+
+@keyframes colision1 {
+  0% {
+    transform:  translate(50px,0px)  rotate(10deg) ;
+  }
+  100% {
+    transform:  translate(-50px,0px)  rotate(10deg) ;
+  }
+}
+
+.error--text {
+  font-size: 1.5em;
+  padding-bottom: 2em;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
   h1 {
     font-size: 2em;
+  }
+
+  .error--text {
+    font-size: 1em;
   }
 
   h2 {
