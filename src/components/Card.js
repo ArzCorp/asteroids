@@ -1,60 +1,35 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-/* import { Link } from 'react-router-dom'; */
 import asteroid from '../images/icon-asteroid.svg';
 import asteroids from '../images/icon-asteroids.svg';
 import orbit from '../images/icon-orbit.svg';
 import telescope from '../images/icon-telescope.svg';
 import alert from '../images/icon-alert.svg';
-import '../css/Global.css'
-import './css/Card.css';
-import Cargando from './General/Cargando';
-import Error from './General/Error'
-import Carousel from './carousel'
-
-
-
+import Loading from './General/Loading';
+import Error from './General/Error';
+import Carousel from './Carousel';
 import * as asteroidesActions from '../actions/asteroidesActions';
-
-
+import '../css/Global.css';
+import './css/Card.css';
 class Card extends Component {
-  // Código para el manejo de los botones
-  state = {
-    focus: 0,
-    meteorito: 0
-  };
-
-  onClickPrev = () =>
-    this.setState(state => ({
-      focus: state.focus - (this.props.getNeos.length - this.props.getNeos.length) + 1 < (this.props.getNeos.length - this.props.getNeos.length) ? (this.props.getNeos.length - this.props.getNeos.length) : state.focus - 1
-    }));
-
-  onClickNext = () =>
-    this.setState(state => ({
-      focus: state.focus + (this.props.getNeos.length - this.props.getNeos.length) - 1 >= this.props.getNeos.length ? (this.props.getNeos.length - 1) : state.focus + 1
-    }));
-
-  // Manejo de botones
   componentDidMount() {
     this.props.traerTodos();
-  }
-
-
+  };
 
   ponerDatos = () => {
     if (this.props.cargando) {
-      return <Cargando />
-    }
+      return <Loading />
+    };
 
     if (this.props.error) {
       return <Error mensaje={this.props.error} />
-    }
-    /* Uso el llamado de del array utilizando length para identificar cuantos elementos de array traigo y poder movernos uno a uno */
+    };
+
     return (
-      <Carousel component="ul" leftPadding={this.props.getNeos.length - this.props.getNeos.length + this.state.focus} focus={this.state.focus} >
-        {this.props.getNeos.map((nombre) => (
-          <li key={nombre._id} className={this.state.focus === this.props.getNeos.length - this.props.getNeos.length + this.state.focus && "has-focus"}>
-            <div className="card">
+      <Fragment>
+        {
+          this.props.getNeos.map((nombre) => (
+            <li key={nombre._id} className="card">
               <div className="asteroid">
                 <img src={asteroid} alt="asteroide card" />
               </div>
@@ -101,33 +76,28 @@ class Card extends Component {
                     </div>
                   </div>
                 </div>
-                {/* <Link to="/" className="card__button" alt="">Explora</Link> */}
               </div>
-            </div>
-          </li>
-        ))}
-      </Carousel>
-    )
-
-  }
-
+            </li>
+          ))}
+      </Fragment>
+    );
+  };
 
   render() {
-    console.log('valor', this.props.getNeos.length - 1)
-    console.log('Aumento ', this.props.getNeos.length - this.props.getNeos.length + this.state.focus)
-    console.log('click ', this.state.focus)
-    console.log('meteorito ', this.props.getNeos.slice[this.state.focus])
     return (
-      <div className="father">
-        {this.ponerDatos()} {/* Se realiza el llamado de la funcion para ver las cards en pantalla */}
-        <button className="slick-arrow slick-prev" onClick={this.onClickPrev}>Prev</button>
-        <button className="slick-arrow slick-next" onClick={this.onClickNext}>Next</button>
-      </div>
-    )
-  }
-}
-}
-
+      <Carousel>
+        <div className="carousel">
+          {this.ponerDatos()}
+        </div>
+        <button onClick={() => {
+          let more = this.props.page + 9;
+          this.props.bringMore(more)
+          console.log(this.props.getNeos.length)
+        }} className="button button-center">Mas asteroides</button>
+      </Carousel>
+    );
+  };
+};
 
 const mapStateToProps = (reducers) => {
   return reducers.asteroidesReducer;

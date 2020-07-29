@@ -6,8 +6,8 @@ import '../css/Global.css'
 const Principal = () => {
   return (
     <Fragment>
-        <Video />
-        <Hero />
+      <Video />
+      <Hero />
     </Fragment>
   )
 }

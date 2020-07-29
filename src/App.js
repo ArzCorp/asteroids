@@ -4,13 +4,9 @@ import { Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Principal from './pages/Principal';
 import Asteroids from './pages/Asteroids';
-<<<<<<< HEAD
-import Cargando from './pages/Cargando';
 import Galery from './pages/Galery';
-=======
-import Galery from './pages/Galery';
+import Card from './components/Card';
 
->>>>>>> c52a0d6ffc165aef70b800d95c7e65f134691c43
 
 function App() {
   return (
@@ -19,11 +15,8 @@ function App() {
         <div className="Wrraper">
           <Route exact path="/" component={Principal} />
           <Route exact path="/asteroides" component={Asteroids} />
-<<<<<<< HEAD
-          <Route exact path="/favoritos" component={Cargando} />
-=======
->>>>>>> c52a0d6ffc165aef70b800d95c7e65f134691c43
           <Route exact path="/galeria" component={Galery} />
+          <Route exact path="/carousel" component={Card} />
         </div>
       </Layout>
     </BrowserRouter>

@@ -2,23 +2,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-.father {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  top: 0;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
 .card {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  background-color: var(--colorSecundary);
+  background-color: var(--colorSecundaryRGB);
   width: 260px;
   height: 560px;
+  margin: var(--spacingx3) var(--spacingx2);
   border-radius: var(--spacing);
   padding: var(--spacingx2);
 }
@@ -95,4 +86,8 @@
 .card__button:hover{
   color: var(--colorDark);
   background-color: var(--colorPrincipal);
+}
+
+.move-rigth {
+  transform: translate(-260px);
 }

@@ -19,6 +19,7 @@
   /*Colors*/
   --colorPrincipal: #55C8F9;
   --colorSecundary: #394444;
+  --colorSecundaryRGB: rgb(57 68 68 / .9);
   --colorClear: #F7FBFE;
   --colorDark: #000000;
   --colorError: #C30000;
@@ -107,6 +108,7 @@ a:hover {
 .button:hover{
   color: var(--colorDark);
   background-color: var(--colorPrincipal);
+  text-decoration: none;
 }
 
 .icon{
@@ -128,6 +130,14 @@ a:hover {
   height: 100%;
 }
 
+.video-fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .father {
   position: absolute;
   display: flex;
@@ -139,8 +149,10 @@ a:hover {
 
 .center {
   width: 100%;
+  height: 1800px;
   text-align: center;
   align-self: center;
+  justify-self: center;
   }
 
 .colision {
@@ -157,22 +169,12 @@ a:hover {
   position: relative;
   max-width: 1024px;
   margin: 0 auto;
-  height: 600px;
-
 }
 
 ul {
   display: flex;
   padding-left: 2%;
   list-style-type: none;
-}
-
-li {
-  display: flex;
-  padding-left: 1rem 2rem;
-  flex: 1;
-  box-sizing: border-box;
-  border: 2px solid yellow;
 }
 
 .has-focus {
