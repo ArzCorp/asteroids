@@ -4,18 +4,19 @@ import { Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Principal from './pages/Principal';
 import Asteroids from './pages/Asteroids';
-import Cargando from './pages/Cargando';
-import Galeria from './pages/Galeria';
+import Galery from './pages/Galery';
+import Card from './components/Card';
+
 
 function App() {
   return (
     <BrowserRouter>
       <Layout>
-        <div className="prueba">
+        <div className="Wrraper">
           <Route exact path="/" component={Principal} />
           <Route exact path="/asteroides" component={Asteroids} />
-          <Route exact path="/favoritos" component={Cargando} />
-          <Route exact path="/galeria" component={Galeria} />
+          <Route exact path="/galeria" component={Galery} />
+          <Route exact path="/carousel" component={Card} />
         </div>
       </Layout>
     </BrowserRouter>

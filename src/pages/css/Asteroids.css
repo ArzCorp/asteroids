@@ -1,0 +1,142 @@
+.orbit__asteroids {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  animation: asteroid_movement linear 50s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.info1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  animation: asteroid_movement linear 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.info2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  justify-self: flex-end;
+  animation: asteroid2-movement linear 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.info3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  animation: asteroid_movement linear 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.text--two {
+  position: relative;
+  color: white;
+  font-size: .8em
+}
+
+.ol {
+  margin: 0px;
+  text-align: center;
+}
+
+.asteroid1 {
+  width: 50%;
+  margin-bottom: var(--spacingx2);
+  position: relative;
+  animation: asteroidRotate linear 20s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+.asteroid2 {
+  width: 50%;
+  margin-bottom: var(--spacingx2);
+  animation: asteroidRotate linear 25s;
+  animation-iteration-count: infinite;
+}
+
+.asteroid3 {
+  width: 50%;
+  margin-bottom: var(--spacingx2);
+  animation: asteroidRotate linear 27s;
+  animation-iteration-count: infinite;
+}
+
+.asteroid4 {
+  width: 50%;
+  margin-bottom: var(--spacingx2);
+  animation: asteroidRotate linear 20s;
+  animation-iteration-count: infinite;
+}
+
+.button-asteroids {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  width: 190px;
+  height: 40px;
+  margin: var(--spacingx2) 0px;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid var(--colorPrincipal);
+  font-size: var(--sizeText);
+  font-weight: bold;
+}
+
+.button-asteroids:hover {
+  color: var(--colorDark);
+  background-color: var(--colorPrincipal);
+  text-decoration: none;
+}
+
+@keyframes asteroid_movement{
+  0% {
+    transform:  translate(0px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(1024px,0px)  rotate(0deg) ;
+  }
+}
+
+@keyframes asteroid2-movement{
+  0% {
+    transform:  translate(0px,0px)  rotate(0deg) ;
+  }
+  100% {
+    transform:  translate(-1024px,0px)  rotate(0deg) ;
+  }
+}
+
+
+@keyframes asteroidRotate{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  100% {
+    transform:  rotate(360deg) ;
+  }
+}

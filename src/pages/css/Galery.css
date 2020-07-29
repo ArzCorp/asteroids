@@ -1,0 +1,23 @@
+.galery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.galery__image{
+  display: flex;
+  margin: var(--spacingx3);
+  margin-right: 0px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid var(--colorPrincipal);
+}
+
+.galery__image img {
+  width: 100%;
+}

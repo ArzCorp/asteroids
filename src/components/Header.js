@@ -8,11 +8,10 @@ class Header extends React.Component {
     return (
       <header className="header">
         <div className="container">
-          <Link to="/" className="header__logo ancore"><img className="header--img" src={Logo} alt="Logo" /></Link> 
+          <Link to="/" className="header__logo ancore"><img className="header--img" src={Logo} alt="Logo" /></Link>
           <div className="navbar">
             <Link className="ancore" to="/asteroides">Asteroides</Link>
             <Link to="/galeria">Galeria</Link>
-            <Link to="/favoritos"><i className="icon fas fa-star"></i></Link>
           </div>
         </div>
       </header>
