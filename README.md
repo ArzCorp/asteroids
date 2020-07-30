@@ -26,7 +26,14 @@
 	`npm run start`
 
 ## 🚧 Technologies used for construction
+------------
 
+- React.
+- Redux.
+- React-router.
+- CSS Pure.
+
+------------
 
 ## 📚 References
 - [Prototypes Design Course](https://platzi.com/clases/diseno-prototipos/)
