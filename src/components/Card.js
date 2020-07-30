@@ -6,6 +6,7 @@ import orbit from '../images/icon-orbit.svg';
 import telescope from '../images/icon-telescope.svg';
 import alert from '../images/icon-alert.svg';
 import Loading from './General/Loading';
+import NotAsteroids from './General/notAsteroid';
 import Error from './General/Error';
 import Carousel from './Carousel';
 import * as asteroidesActions from '../actions/asteroidesActions';
@@ -44,8 +45,8 @@ class Card extends Component {
                   <div className="card__item">
                     <div className="data">
                       <h3 className="title__api">Diametro estimado</h3>
-                      <p className="title__data">{nombre.estimated_diameter.kilometers.estimated_diameter_min}</p>
-                      <p className="title__data">{nombre.estimated_diameter.kilometers.estimated_diameter_max}</p>
+                      <p className="title__data">{nombre.estimated_diameter.kilometers.estimated_diameter_min.toFixed(3)}</p>
+                      <p className="title__data">{nombre.estimated_diameter.kilometers.estimated_diameter_max.toFixed(3)}</p>
                     </div>
                   </div>
                   <div className="card__item">
@@ -84,6 +85,17 @@ class Card extends Component {
   };
 
   render() {
+    if (this.props.cargando) {
+      return <Loading />
+    };
+
+    if (!this.props.getNeos.length) {
+      return (
+        <Carousel>
+          <NotAsteroids />
+        </Carousel>
+      );
+    };
     return (
       <Carousel>
         <div className="carousel">
@@ -92,7 +104,7 @@ class Card extends Component {
         <button onClick={() => {
           let more = this.props.page + 9;
           this.props.bringMore(more)
-          console.log(this.props.getNeos.length)
+          window.scroll(0, 0)
         }} className="button button-center">Mas asteroides</button>
       </Carousel>
     );

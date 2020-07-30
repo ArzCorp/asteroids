@@ -148,12 +148,19 @@ a:hover {
 }
 
 .center {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 1800px;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
   text-align: center;
-  align-self: center;
-  justify-self: center;
   }
+
+.margin-top-bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .colision {
   position: relative;
@@ -221,8 +228,18 @@ ul {
 }
 
 .error--text {
-  font-size: 1.5em;
-  padding-bottom: 2em;
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--colorError);
+}
+
+.reset-style {
+  text-decoration: none;
+  color: transparent;
+  font-size: inherit;
+  display: block;
+  padding: 0px;
+  text-align: center;
 }
 
 

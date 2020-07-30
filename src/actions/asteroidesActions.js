@@ -51,6 +51,7 @@ export const traerTodos = () => async (dispatch) => {
 
 export const bringMore = (props) => async (dispatch, getState) => {
   let { page } = getState().asteroidesReducer;
+  let state = getState().asteroidesReducer;
   page = props
   dispatch({
     type: CARGANDO
@@ -84,9 +85,14 @@ export const bringMore = (props) => async (dispatch, getState) => {
       })
     })
       .then(response => response.json())
+    state = {
+      ...state,
+      getNeos: state.getNeos.concat(respuesta.data.getNeos)
+    }
+    state.getNeos.splice(0, page)
     dispatch({
       type: TRAER_ASTEROIDES,
-      payload: respuesta.data.getNeos,
+      payload: state.getNeos
     })
     dispatch({
       type: UPDATE_PAGE,
