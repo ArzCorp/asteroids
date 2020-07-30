@@ -26,3 +26,25 @@
 	`npm run start`
 
 ## 🚧 Technologies used for construction
+
+
+## 📚 References
+- [Prototypes Design Course](https://platzi.com/clases/diseno-prototipos/)
+- [Design System Course](https://platzi.com/clases/sistemas-diseno/)
+
+[jairo_project]: https://github.com/jsv1280/api-nasa
+[jairo_github]: https://github.com/jsv1280
+[rafa_hector_project]: https://github.com/rafeldev/comeet-cat
+[hector_github]: https://github.com/HectorDevx
+[rafa_github]: https://github.com/rafeldev 
+[juan_github]: https://github.com/Gaybre
+[felipe_github]: https://github.com/FelipeMerchan
+[juan_felipe_github]: https://github.com/T-rexpace
+[juan_abdiel_github]: https://github.com/WS-Jedp
+[luis_osvaldo_github]: https://github.com/ArzateCompany/asteroids
+[luis_github]: https://github.com/cabezas29
+[osvaldo_github]: https://github.com/ArzateCompany
+[abdiel_github]: https://github.com/abdieljortega
+[joshua_github]: https://github.com/joshuapcruz
+[juan_abdiel_project]: https://github.com/WS-Jedp/Neobit
+[miguel_twitter]: https://twitter.com/OgaKuga
