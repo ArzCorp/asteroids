@@ -15,86 +15,65 @@ class Galery extends Component {
     this.setState({
       data: [
         {
-          "src": "https://i.ibb.co/L184Fs1/951-Gaspra.jpg",
+          "src": "https://i.ibb.co/KKNncH9/11.png",
           "id": 1
         },
         {
-          "src": "https://i.ibb.co/sJMqPtp/1327922920-1.jpg",
+          "src": "https://i.ibb.co/fS88BV8/12.png",
           "id": 2
         },
         {
-          "src": "https://i.ibb.co/8Yb7PF0/Asteroide-2012-DA14.jpg",
+          "src": "https://i.ibb.co/L6CNhdx/13.png",
           "id": 3
         },
         {
-          "src": "https://i.ibb.co/LnzLD2D/asteroide.jpg",
+          "src": "https://i.ibb.co/F5czSsB/14.png",
           "id": 4
         },
         {
-          "src": "https://i.ibb.co/bs1YgRJ/Asteroide1.jpg",
+          "src": "https://i.ibb.co/8sW39KJ/01.png",
           "id": 5
         },
         {
-          "src": "https://i.ibb.co/gmRd3WK/Didymos.jpg",
+          "src": "https://i.ibb.co/h8JkY4F/02.png",
           "id": 6
         },
         {
-          "src": "https://i.ibb.co/GC0QDRd/jeremy-thomas-E0-AHds-ENm-Dg-unsplash.jpg",
+          "src": "https://i.ibb.co/dLhCykg/03.png",
           "id": 7
         },
         {
-          "src": "https://i.ibb.co/0CQhtkS/nasa-OLlj17t-UZn-U-unsplash.jpg",
+          "src": "https://i.ibb.co/QKJs6DY/04.png",
           "id": 8
         },
         {
-          "src": "https://i.ibb.co/8M2M4cN/nasa-Q1p7bh3-SHj8-unsplash.jpg",
+          "src": "https://i.ibb.co/gVYkvtq/05.png",
           "id": 9
         },
         {
-          "src": "https://i.ibb.co/LSYGsgt/nasa-r-TZW4f02z-Y8-unsplash.jpg",
+          "src": "https://i.ibb.co/991vvry/06.png",
           "id": 10
         },
         {
-          "src": "https://i.ibb.co/WkBy8Vd/nasa-y-Zyg-ONr-UBe8-unsplash.jpg",
+          "src": "https://i.ibb.co/2kdkGQr/07.png",
           "id": 11
         },
         {
-          "src": "https://i.ibb.co/r7BVpXL/niketh-vellanki-Qk-SN-8-Xc-Xw-Q-unsplash.jpg",
+          "src": "https://i.ibb.co/xYp2hhq/08.png",
           "id": 12
         },
         {
-          "src": "https://i.ibb.co/g6XM3W8/Ori-n.jpg",
+          "src": "https://i.ibb.co/cNpQRQb/11-2.png",
           "id": 13
         },
         {
-          "src": "https://i.ibb.co/0CQhtkS/nasa-OLlj17t-UZn-U-unsplash.jpg",
+          "src": "https://i.ibb.co/Bc5VkxZ/09.png",
           "id": 14
         },
         {
-          "src": "https://i.ibb.co/94ZWwQK/photo-153107566548-6577aab321d7.jpg",
+          "src": "https://i.ibb.co/KzQLzx5/10.png",
           "id": 15
         },
-        {
-          "src": "https://i.ibb.co/PwTVfFR/Two-Very-Dfferent-Asteroids.jpg",
-          "id": 16
-        },
-        {
-          "src": "https://i.ibb.co/0yvdS20/NASA-s-Daw-asteroid-lithograph-of-Eros-and-other-asteroids.jpg",
-          "id": 17
-        },
-        {
-          "src": "https://i.ibb.co/DtLfNy9/This-framefrom-a-movie-of-asteroid-2014-JO25-was-generated-using-radar-data-collected-by-NASA-s-230.jpg",
-          "id": 18
-        },
-        {
-          "src": "https://i.ibb.co/7YTxwy4/nasa-Cp-HNNRw-Xps-unsplash.jpg",
-          "id": 19
-        },
-        {
-          "src": "https://i.ibb.co/584fXqK/Oumuamua.jpg",
-          "id": 20
-        },
-
       ]
     });
   };
