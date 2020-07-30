@@ -24,6 +24,11 @@
 - To run the project on your computer locally:
 
 	`npm run start`
+	
+## 🎤 Acknowledgment
+* To Coach Joshua Pedraza.
+* To Cohort 3 Team Cesar.
+* To Platzi Staff.
 
 ## 🚧 Technologies used for construction
 ------------
@@ -34,6 +39,9 @@
 - CSS Pure.
 
 ------------
+## 🚦 License
+
+[MIT License]
 
 ## 📚 References
 - [Prototypes Design Course](https://platzi.com/clases/diseno-prototipos/)
