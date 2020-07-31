@@ -63,7 +63,7 @@ class Card extends Component {
                   </div>
                   <div className="card__item">
                     <div className="data">
-                      <h3 className="title__api">Magnitud Adsoluta</h3>
+                      <h3 className="title__api">Magnitud Absoluta</h3>
                       <p className="title__data">{nombre.absolute_magnitude_h}Km</p>
                     </div>
                   </div>
